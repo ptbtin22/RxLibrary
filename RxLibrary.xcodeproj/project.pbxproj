@@ -6,27 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D27B32982F2F9633004170FE /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D27B32972F2F9633004170FE /* RxCocoa */; };
+		D27B329A2F2F9633004170FE /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D27B32992F2F9633004170FE /* RxRelay */; };
+		D27B329C2F2F9633004170FE /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D27B329B2F2F9633004170FE /* RxSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		D27B32782F2F7FCF004170FE /* delegation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = delegation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27B32782F2F7FCF004170FE /* RxLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D27B328A2F2F7FD1004170FE /* Exceptions for "delegation" folder in "delegation" target */ = {
+		D21B2D632F2FB54D0082358B /* Exceptions for "RxLibrary" folder in "RxLibrary" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				App/Resources/Info.plist,
 			);
-			target = D27B32772F2F7FCF004170FE /* delegation */;
+			target = D27B32772F2F7FCF004170FE /* RxLibrary */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D27B327A2F2F7FCF004170FE /* delegation */ = {
+		D27B327A2F2F7FCF004170FE /* RxLibrary */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				D27B328A2F2F7FD1004170FE /* Exceptions for "delegation" folder in "delegation" target */,
+				D21B2D632F2FB54D0082358B /* Exceptions for "RxLibrary" folder in "RxLibrary" target */,
 			);
-			path = delegation;
+			path = RxLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -36,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D27B329C2F2F9633004170FE /* RxSwift in Frameworks */,
+				D27B329A2F2F9633004170FE /* RxRelay in Frameworks */,
+				D27B32982F2F9633004170FE /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +54,7 @@
 		D27B326F2F2F7FCF004170FE = {
 			isa = PBXGroup;
 			children = (
-				D27B327A2F2F7FCF004170FE /* delegation */,
+				D27B327A2F2F7FCF004170FE /* RxLibrary */,
 				D27B32792F2F7FCF004170FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +62,7 @@
 		D27B32792F2F7FCF004170FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D27B32782F2F7FCF004170FE /* delegation.app */,
+				D27B32782F2F7FCF004170FE /* RxLibrary.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D27B32772F2F7FCF004170FE /* delegation */ = {
+		D27B32772F2F7FCF004170FE /* RxLibrary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D27B328B2F2F7FD1004170FE /* Build configuration list for PBXNativeTarget "delegation" */;
+			buildConfigurationList = D27B328B2F2F7FD1004170FE /* Build configuration list for PBXNativeTarget "RxLibrary" */;
 			buildPhases = (
 				D27B32742F2F7FCF004170FE /* Sources */,
 				D27B32752F2F7FCF004170FE /* Frameworks */,
@@ -74,13 +83,16 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D27B327A2F2F7FCF004170FE /* delegation */,
+				D27B327A2F2F7FCF004170FE /* RxLibrary */,
 			);
-			name = delegation;
+			name = RxLibrary;
 			packageProductDependencies = (
+				D27B32972F2F9633004170FE /* RxCocoa */,
+				D27B32992F2F9633004170FE /* RxRelay */,
+				D27B329B2F2F9633004170FE /* RxSwift */,
 			);
-			productName = delegation;
-			productReference = D27B32782F2F7FCF004170FE /* delegation.app */;
+			productName = RxLibrary;
+			productReference = D27B32782F2F7FCF004170FE /* RxLibrary.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D27B32732F2F7FCF004170FE /* Build configuration list for PBXProject "delegation" */;
+			buildConfigurationList = D27B32732F2F7FCF004170FE /* Build configuration list for PBXProject "RxLibrary" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -107,12 +119,15 @@
 			);
 			mainGroup = D27B326F2F2F7FCF004170FE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D27B32962F2F9633004170FE /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D27B32792F2F7FCF004170FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D27B32772F2F7FCF004170FE /* delegation */,
+				D27B32772F2F7FCF004170FE /* RxLibrary */,
 			);
 		};
 /* End PBXProject section */
@@ -147,18 +162,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8VWT2MD344;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = delegation/Info.plist;
+				INFOPLIST_FILE = RxLibrary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tinpham.delegation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinpham.RxLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -179,18 +194,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8VWT2MD344;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = delegation/Info.plist;
+				INFOPLIST_FILE = RxLibrary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tinpham.delegation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinpham.RxLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -326,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D27B32732F2F7FCF004170FE /* Build configuration list for PBXProject "delegation" */ = {
+		D27B32732F2F7FCF004170FE /* Build configuration list for PBXProject "RxLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D27B328E2F2F7FD1004170FE /* Debug */,
@@ -335,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D27B328B2F2F7FD1004170FE /* Build configuration list for PBXNativeTarget "delegation" */ = {
+		D27B328B2F2F7FD1004170FE /* Build configuration list for PBXNativeTarget "RxLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D27B328C2F2F7FD1004170FE /* Debug */,
@@ -345,6 +360,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D27B32962F2F9633004170FE /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D27B32972F2F9633004170FE /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D27B32962F2F9633004170FE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		D27B32992F2F9633004170FE /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D27B32962F2F9633004170FE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		D27B329B2F2F9633004170FE /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D27B32962F2F9633004170FE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D27B32702F2F7FCF004170FE /* Project object */;
 }

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  delegation
+//  RxLibrary
 //
 //  Created by Tin Pham on 1/2/26.
 //
