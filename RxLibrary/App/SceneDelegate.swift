@@ -15,8 +15,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        let viewModel: ViewModelProtocol = ViewModel(someService: MockService())
-        let viewController = ViewController(viewModel: viewModel)
+        let booksRepository = BooksRepository(remoteDataSource: OpenLibraryRemoteDataSource())
+        let viewModel: BookListViewModelProtocol = BookListViewModel(booksRepository: booksRepository)
+        let viewController = BookListViewController(viewModel: viewModel)
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
     }

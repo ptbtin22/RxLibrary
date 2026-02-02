@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D21B2DB62F3100E10082358B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D21B2DB52F3100E10082358B /* Kingfisher */; };
 		D27B32982F2F9633004170FE /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D27B32972F2F9633004170FE /* RxCocoa */; };
 		D27B329A2F2F9633004170FE /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D27B32992F2F9633004170FE /* RxRelay */; };
 		D27B329C2F2F9633004170FE /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D27B329B2F2F9633004170FE /* RxSwift */; };
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21B2DB62F3100E10082358B /* Kingfisher in Frameworks */,
 				D27B329C2F2F9633004170FE /* RxSwift in Frameworks */,
 				D27B329A2F2F9633004170FE /* RxRelay in Frameworks */,
 				D27B32982F2F9633004170FE /* RxCocoa in Frameworks */,
@@ -90,6 +92,7 @@
 				D27B32972F2F9633004170FE /* RxCocoa */,
 				D27B32992F2F9633004170FE /* RxRelay */,
 				D27B329B2F2F9633004170FE /* RxSwift */,
+				D21B2DB52F3100E10082358B /* Kingfisher */,
 			);
 			productName = RxLibrary;
 			productReference = D27B32782F2F7FCF004170FE /* RxLibrary.app */;
@@ -121,6 +124,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				D27B32962F2F9633004170FE /* XCRemoteSwiftPackageReference "RxSwift" */,
+				D21B2DB42F3100E10082358B /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D27B32792F2F7FCF004170FE /* Products */;
@@ -162,7 +166,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8VWT2MD344;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RxLibrary/Info.plist;
+				INFOPLIST_FILE = RxLibrary/App/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -194,7 +198,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8VWT2MD344;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RxLibrary/Info.plist;
+				INFOPLIST_FILE = RxLibrary/App/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -362,6 +366,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D21B2DB42F3100E10082358B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.2;
+			};
+		};
 		D27B32962F2F9633004170FE /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -373,6 +385,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D21B2DB52F3100E10082358B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D21B2DB42F3100E10082358B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		D27B32972F2F9633004170FE /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D27B32962F2F9633004170FE /* XCRemoteSwiftPackageReference "RxSwift" */;
